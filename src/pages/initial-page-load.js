@@ -2,6 +2,19 @@ function createHeader(){
   const header = document.createElement('div');
   header.setAttribute('id', 'header');
 
+  const nav = createNav();
+  const title = document.createElement('h1');
+  title.setAttribute('id', 'title');
+  title.textContent = "Eat n' Greet!";
+
+  header.appendChild(title);
+  header.appendChild(nav);
+  return header;
+}
+
+function createNav() {
+
+  const nav = document.createElement('nav');
   const homeAnchor = document.createElement('a');
   homeAnchor.textContent = 'Home';
   homeAnchor.href = '#';
@@ -11,17 +24,19 @@ function createHeader(){
   const contactAnchor = document.createElement('a');
   contactAnchor.textContent = 'Contact';
   contactAnchor.href = '#';
+  nav.appendChild(homeAnchor);
+  nav.appendChild(menuAnchor);
+  nav.appendChild(contactAnchor);
+  return nav;
 
-  header.appendChild(homeAnchor);
-  header.appendChild(menuAnchor);
-  header.appendChild(contactAnchor);
-
-  return header;
 }
 
 function createMain() {
   const main = document.createElement('div');
   main.setAttribute('id', 'main');
+  const p = document.createElement('p');
+  p.textContent = 'hello world!';
+  main.appendChild(p);
   return main;
 }
 
