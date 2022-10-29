@@ -13,7 +13,7 @@ function createHeader(){
 function createTitle() {
   const title = document.createElement('h1');
   title.id = 'title';
-  title.textContent = "Alice's Diner";
+  title.textContent = "Alice's Pizza-Plaza";
   return title;
 }
 

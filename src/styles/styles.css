@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* 
+  CLEAR THINGS UP! 
+  * Add variables for colors and dimensions
+  * Look inte font-face
+  * Fix styling for the menu
+*/
 * {
   margin: 0;
   padding: 0;
@@ -46,11 +52,10 @@ body {
   display: flex;
   gap: 25px;
   padding-right: 50px;
-  
 }
 
 a {
-  font-size: 2rem;
+  font-size: 3em;
   text-decoration: none;
   color: #c4a747;
 }
@@ -107,8 +112,13 @@ a:hover {
   
 }
 
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 li {
   list-style: none;
-  text-align: left;
   font-size: 1.5rem;
 }

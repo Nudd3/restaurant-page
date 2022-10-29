@@ -10,7 +10,7 @@ function aboutSection() {
 
   const aboutContent = document.createElement('div');
   aboutContent.classList.add('card-content');
-  aboutContent.innerHTML = "Welcome to Alice's Diner!<br/> We take pride in serving amazing food from all across the globe";
+  aboutContent.innerHTML = "Welcome to Alice's Pizza-Plaza!<br/> We really like pizza! But we also want others to like pizza. Hence, we make pizza!";
 
   about.appendChild(aboutTitle);
   about.appendChild(aboutContent);
