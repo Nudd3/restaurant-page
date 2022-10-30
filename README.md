@@ -9,3 +9,6 @@ This is a project for The Odin Project's JavaScript curriculum. With the goal be
 * JavaScript
 * HTML
 * CSS
+
+## Assets
+[Background Image](https://www.pexels.com/photo/empty-brown-canvas-235985/)
