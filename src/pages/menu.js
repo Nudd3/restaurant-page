@@ -10,55 +10,42 @@ function createCard() {
   const dishes = [
     {
       name: 'Margarita',
-      ingredients: ['Tomato Sauce', 'Cheese']
+      ingredients: ['Tomato Sauce', 'Cheese'],
+      price: "8.60"
     },
     {
       name: 'Vesuvio',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham']
+      ingredients: ['Tomato Sauce', 'Cheese', 'Ham'],
+      price: "9.59"
     },
     {
       name: 'Hawaii',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Pineapple']
+      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Pineapple'],
+      price: "9.59"
     },
     {
       name: 'Capricciosa',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Mushrooms']
+      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Mushrooms'],
+      price:" 9.59"
     },
     {
       name: 'Mexicana',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Onion', 'Bell Peppers', 'Jalapeño']
+      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Onion', 'Bell Peppers', 'Jalapeño'],
+      price:"10.00"
     },
     {
       name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
-    },
-    {
-      name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
-    },
-    {
-      name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
-    },
-    {
-      name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
-    },
-    {
-      name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
-    },
-    {
-      name: 'Alice Special',
-      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella']
+      ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella'],
+      price: "10.49"
     },
 
   ];
 
   const pizzas = document.createElement('div');
+  pizzas.classList.add('pizzas');
 
   dishes.forEach(dish => {
-    const current = createDish(dish.name, dish.ingredients);
+    const current = createDish(dish.name, dish.ingredients, dish.price);
     pizzas.appendChild(current);
   });
 
@@ -66,11 +53,16 @@ function createCard() {
   return card;
 }
 
-function createDish(name, ingredients) {
+function createDish(name, ingredients,price) {
   const dish = document.createElement('div');
 
   const dishName = document.createElement('div');
-  dishName.innerHTML = name;
+  const theName = document.createElement('h4');
+  theName.textContent = name;
+  const thePrice = document.createElement('h4');
+  thePrice.textContent = "$" + price;
+  dishName.appendChild(theName);
+  dishName.appendChild(thePrice);
   dishName.classList.add('menu-title'); // OBS! TO BE ADDED
 
   const dishIngredients = document.createElement('div');
