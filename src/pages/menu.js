@@ -38,6 +38,26 @@ function createCard() {
       ingredients: ['Tomato Sauce', 'Cheese', 'Ham', 'Spicy Salami', 'Mozzarella'],
       price: "10.49"
     },
+    {
+      name: 'Italia',
+      ingredients: ['Tomato Sauce', 'Cheese', 'Onion', 'Tuna'],
+      price: "10.99"
+    },
+    {
+      name: 'Amigo',
+      ingredients: ['Tomato Sauce', 'Cheese', 'Mushrooms', 'Bell Peppers', 'Minced Meat'],
+      price: "10.49"
+    },
+    {
+      name: 'Vegetariana',
+      ingredients: ['Tomato Sauce', 'Cheese', 'Onion', 'Mushrooms', 'Pineapple', 'Bell Peppers', 'Artichoke'],
+      price: "9.49"
+    },
+    {
+      name: 'Jamaica',
+      ingredients: ['Tomato Sauce', 'Cheese', 'Mushrooms', 'Shrimp'],
+      price: "10.99"
+    },
 
   ];
 
