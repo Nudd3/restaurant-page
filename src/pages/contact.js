@@ -8,7 +8,7 @@ function createContent() {
 
   const content = document.createElement('div');
   content.innerHTML =
-    'If you have any questions regarding our food or anything else in the universe, feel free to contact us at: <br /> Email: alicesdiner@food.com <br /> Phone: 123-00124949';
+    'If you have any questions regarding our food or anything else in the universe, feel free to contact us at: <br /> Email: alicespizzaplaza@food.com <br /> Phone: 123-00124949';
   content.classList.add('card-content');
 
   section.appendChild(title);
