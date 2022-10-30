@@ -1,4 +1,4 @@
-function createHeader(){
+function createHeader() {
   const header = document.createElement('div');
   header.classList.add('header');
 
@@ -18,7 +18,6 @@ function createTitle() {
 }
 
 function createNav() {
-
   const nav = document.createElement('nav');
   nav.id = 'nav';
   const homeAnchor = createAnchor('Home');
@@ -28,7 +27,6 @@ function createNav() {
   nav.appendChild(menuAnchor);
   nav.appendChild(contactAnchor);
   return nav;
-
 }
 
 function createAnchor(textContent) {
@@ -52,7 +50,7 @@ export function clear() {
   }
 }
 
-export function init(){
+export function init() {
   const content = document.getElementById('content');
   content.appendChild(createHeader());
   content.appendChild(createMain());

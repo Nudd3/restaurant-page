@@ -10,12 +10,12 @@ function aboutSection() {
 
   const aboutContent = document.createElement('div');
   aboutContent.classList.add('card-content');
-  aboutContent.innerHTML = "Welcome to Alice's Pizza-Plaza!<br/> We really like pizza! But we also want others to like pizza. Hence, we make pizza!";
+  aboutContent.innerHTML =
+    "Welcome to Alice's Pizza-Plaza!<br/> We really like pizza! But we also want others to like pizza. Hence, we make pizza!";
 
   about.appendChild(aboutTitle);
   about.appendChild(aboutContent);
   return about;
-
 }
 
 function hoursSection() {
@@ -61,7 +61,7 @@ function locationSection() {
 
   const locationContent = document.createElement('div');
   locationContent.classList.add('card-content');
-  locationContent.innerHTML = "You find us at:<br/>Boulevard of happiness, NY";
+  locationContent.innerHTML = 'You find us at:<br/>Boulevard of happiness, NY';
 
   location.appendChild(locationTitle);
   location.appendChild(locationContent);
@@ -69,12 +69,11 @@ function locationSection() {
 }
 
 export function loadHome() {
-  const homeAnchor = document.getElementById("home");
+  const homeAnchor = document.getElementById('home');
   homeAnchor.classList.add('taken');
-  
+
   const main = document.getElementById('main');
   main.appendChild(aboutSection());
   main.appendChild(hoursSection());
   main.appendChild(locationSection());
 }
-
