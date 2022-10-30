@@ -16,6 +16,9 @@ function createContent(){
 }
 
 export function loadContact() {
+  const contactAnchor = document.getElementById("contact");
+  contactAnchor.classList.add('taken');
+
   const content = document.getElementById('main');
   content.appendChild(createContent());
 }

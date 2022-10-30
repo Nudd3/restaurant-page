@@ -63,11 +63,11 @@ function createDish(name, ingredients,price) {
   thePrice.textContent = "$" + price;
   dishName.appendChild(theName);
   dishName.appendChild(thePrice);
-  dishName.classList.add('menu-title'); // OBS! TO BE ADDED
+  dishName.classList.add('menu-title');
 
   const dishIngredients = document.createElement('div');
   dishIngredients.innerHTML = ingredients.join(', ');
-  dishIngredients.classList.add('ingredients'); // OBS! TO BE ADDED
+  dishIngredients.classList.add('ingredients');
 
 
   dish.appendChild(dishName);
@@ -77,6 +77,9 @@ function createDish(name, ingredients,price) {
 }
 
 export function loadMenu() {
+  const menuAnchor = document.getElementById("menu");
+  menuAnchor.classList.add('taken');
+  
   const content = document.getElementById('main');
   content.appendChild(createCard());
 }

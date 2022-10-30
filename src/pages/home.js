@@ -69,6 +69,9 @@ function locationSection() {
 }
 
 export function loadHome() {
+  const homeAnchor = document.getElementById("home");
+  homeAnchor.classList.add('taken');
+  
   const main = document.getElementById('main');
   main.appendChild(aboutSection());
   main.appendChild(hoursSection());
